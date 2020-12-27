@@ -1,0 +1,219 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+
+        <TableRow android:padding="5dip">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_span="2"
+                android:gravity="center_horizontal"
+                android:text="YAH System"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+
+            <Spinner
+                android:id="@+id/firstspinner"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_marginLeft="10dp"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/secondspinner"
+                android:layout_width="195dp"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_marginLeft="10dp"
+                android:textSize="16sp"
+               />
+
+        </TableRow>
+        <TableRow android:layout_marginTop="20dp">
+            <Spinner
+                android:id="@+id/thirdspinner"
+                android:layout_width="195dp"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_marginLeft="10dp"
+                android:textSize="16sp"
+                />
+            <Spinner
+                android:id="@+id/fourthspinner"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_span="1"
+                />
+        </TableRow>
+        <TableRow android:layout_marginTop="20dp">
+            <TextView
+                android:text="Home Team"
+                android:textStyle="bold"
+                />
+        </TableRow>
+
+        <TableRow>
+
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinnerone" />
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinnertwo" />
+
+        </TableRow>
+
+        <TableRow android:layout_marginTop="20dp">
+            <TextView
+                android:text="Away Team
+               ‌"
+                android:textStyle="bold"
+                />
+        </TableRow>
+        <TableRow >
+
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerthree" />
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerfour" />
+
+        </TableRow>
+
+        <TableRow android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/league"
+                android:layout_width="149dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:hint="Leauge"
+                android:layout_span="2"
+                tools:layout_editor_absoluteX="41dp" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:hint="Home Team"
+                android:layout_span="2"
+                tools:layout_editor_absoluteX="41dp" />
+        </TableRow>
+        <TableRow android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/away"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:hint="Away Team"
+                android:layout_span="2"
+                tools:layout_editor_absoluteX="41dp" />
+        </TableRow>
+
+
+        <TableRow android:layout_marginTop="20dp">
+
+
+            <EditText
+                android:id="@+id/date"
+                android:layout_width="195dp"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_marginLeft="10dp"
+                android:textSize="16sp"
+                android:layout_centerHorizontal="true"
+                android:hint="ရက်စွဲ..."
+                android:padding="15dp"
+
+
+                />
+
+            <EditText
+                android:id="@+id/time"
+                android:layout_width="195dp"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_marginLeft="10dp"
+                android:textSize="16sp"
+                android:layout_centerHorizontal="true"
+                android:hint="အချိန်..."
+                android:padding="15dp"
+
+
+                />
+
+        </TableRow>
+        <TableRow android:layout_marginTop="20dp">
+
+
+
+            <Spinner
+                android:id="@+id/goalspin"
+                android:layout_width="83dp"
+                android:layout_height="34dp"
+                android:layout_column="0"
+                android:layout_marginTop="32dp"
+                android:textSize="16sp"
+                />
+
+
+            <Spinner
+                android:id="@+id/goalspin2"
+                android:layout_width="83dp"
+                android:layout_height="34dp"
+                android:layout_column="0"
+                android:layout_marginTop="32dp"
+                android:textSize="16sp"
+            />
+
+
+        </TableRow>
+
+        <TableRow android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/search"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_span="2"
+                android:text="ရှာဖွေရန်"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+    </TableLayout>
+</ScrollView>
+</RelativeLayout>
+
